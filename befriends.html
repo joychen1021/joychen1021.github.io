@@ -1,0 +1,176 @@
+<html>
+<head>
+     <meta charset="utf-8">
+    <title>Navigation Bar</title>
+     <style>
+      <title>Navigation Bar</title>
+
+        <!-- 開始製作CSS樣板 -->
+        
+            
+        /* 無序清單製作 */    
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color:black;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            font-family: Kristen ITC;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn {
+            color: black;
+            background-color: gold;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 160px;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {background-color: gold}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            
+            color: white;
+        
+
+        }
+            
+ body {background-image:url("run.jpg");background-repeat:no-repeat; background-position:top center;}
+    
+    </style>
+     
+<script type="text/javascript">
+    
+function check() 
+    {
+ if (reg.myname.value == "") 
+{alert("未輸入姓名");}
+else reg.submit();
+    }
+</script>
+    
+
+</head>
+<body>
+    <ul>
+      <li><a href="#home">Introduce Myself</a></li>
+      <li><a href="#news">Education</a></li>
+      <li><a href="#home">Work Experience</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Travel Around The World</a>
+        <div class="dropdown-content">
+          <a href="#">Canada</a>
+          <a href="#">Hong Kong</a>
+          <a href="#">Japan</a>
+          <a href="#">U.S</a>
+          <a href="#">Indonesia</a>
+          <a href="#">Thailand</a>
+          <a href="#">Australia</a>
+          <a href="finland.html">Finland</a>
+        </div>
+      </li>
+       <li><a href="#">Contact Me</a></li>
+       <li><a href="#">Be Friends</a></li>
+        </ul>
+    <form name="基本資料" method="post" action="path/to/serverside-script.php">
+    
+    
+    <br><br><br> <br><br>
+    <fieldset>
+   <legend>基本資料</legend>
+   <label for="myname">姓名：</label><input    type="text" name="myname" value="" placeholder="最大長度10字">
+      &nbsp;&nbsp; &nbsp;&nbsp;
+      
+      <label for="PHONE">生日：西元</label><input    type="text" name="PHONE" value="" >
+      
+      <label for="PHONE"> / </label><select name="gender"><option value="1" selected="selected">請選取</option><option value="2">01</option><option value="3">02</option><option value="2">03</option><option value="3">04</option><option value="2">05</option><option value="3">06</option><option value="2">07</option><option value="3">08</option><option value="2">09</option><option value="3">10</option><option value="3">11</option><option value="3">12</option></select>
+      
+      
+<label for="PHONE">/ </label><select name="gender"><option value="1" selected="selected">請選取</option><option value="2">01</option><option value="3">02</option><option value="2">03</option><option value="3">04</option><option value="2">05</option><option value="3">06</option><option value="2">07</option><option value="3">08</option><option value="2">09</option><option value="3">10</option><option value="3">11</option><option value="3">12</option><option value="2">13</option><option value="3">14</option><option value="2">15</option><option value="3">16</option><option value="2">17</option><option value="3">18</option><option value="2">19</option><option value="3">20</option><option value="3">21</option><option value="3">22</option><option value="2">23</option><option value="3">24</option><option value="2">25</option><option value="3">26</option><option value="2">27</option><option value="3">28</option><option value="2">29</option><option value="3">30</option><option value="3">31</option></select>
+   
+   
+    <br><br><label for="first-name">電話：</label><input    type="text" name="firstname" value="" placeholder="低於10位數字">
+      
+      &nbsp;&nbsp; &nbsp;&nbsp;
+      
+      <label for="PHONE">臉書帳號：</label><input    type="text" name="PHONE" value="" >
+       
+        <br><br><label for="first-name">性別(單選)：</label><input type="checkbox"><label for="first-name">男</label><input type="checkbox"><label for="first-name">女</label>
+        
+   </fieldset>
+   <br>
+   
+   
+   
+   
+   <fieldset>
+   <legend>其他項目</legend>
+   <br>
+    <label for="first-name">嗜好(複選)：</label>
+     <input type="checkbox"><label for="first-name">閱讀</label>
+     <input type="checkbox"><label for="first-name">運動</label>
+     <input type="checkbox"><label for="first-name">音樂</label>
+     <input type="checkbox"><label for="first-name">睡覺</label>
+     <input type="checkbox"><label for="first-name">聊天</label>
+      
+      
+      <br><br>
+      <label for="PHONE">選擇你喜歡的幾門課(多選)：<select name="products" multiple="multiple">
+      <option value="Value 1" selected="selected">網頁設計</option> 
+    <option value="Value 2">商事法</option> 
+     <option value="Value 3">投資學</option>
+     <option value="Value 2">行銷管理</option> 
+     <option value="Value 3">商用日文</option>
+     </select>
+      <br><br>
+      <label for="first-name" >想說的話:D</label><br>
+      <textarea placeholder="至少10字"></textarea>
+      
+      
+          </fieldset>
+   
+   
+   <form name="reg" method="post" action="form.aspx">
+  
+  <input type="submit" onClick="check()"> <input type="reset">
+</form>
+
+
+
+   
+   
+    
+
+    
+</body>
+</html>
