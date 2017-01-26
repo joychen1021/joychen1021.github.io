@@ -1,0 +1,182 @@
+<html>
+<head>
+
+
+  <title>Navigation Bar</title>
+
+        <!-- 開始製作CSS樣板 -->
+        <style>
+            
+        /* 無序清單製作 */    
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            font-family: Kristen ITC;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn {
+            color: black;
+            background-color: gold;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 160px;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {background-color: gold}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            
+            color: white;
+        
+
+        }
+            
+ body {background-image:url("run.jpg");background-repeat:no-repeat; background-position:top center;}
+   
+<div>
+*{box-sizing:border-box;overflow: auto; float: left;}
+
+.container {
+  display: incline-block; 
+  width: 730px;
+  height: 500px;
+  margin: 5px auto;
+  padding: 30px;
+  border: 5px solid blue;
+opacity:0.8;
+  background-color: aliceblue;}
+ .container2 {
+  width: 200px;
+height: 450px;
+  margin-left: 10PX;margin-right: 10PX;
+  padding: 3px;
+  border: 5px solid purple ;
+  float:left;
+  background-color: lavender;
+  text-align:center;}
+ .container3 {
+  width: 200px;
+height: 450px;
+  margin-left: 10PX;margin-right: 10PX;
+  padding: 3px;
+  border: 5px solid red ;
+  float:left;
+  background-color: pink;
+  text-align:center;}
+.container4 {
+  width: 200px;
+  height: 450px;
+  margin-left: 10PX;margin-right: 10PX;
+  padding: 3px;
+  border: 5px solid orange ;
+  float:left;
+  background-color: lightyellow;
+  text-align:center;}
+</div>
+</style>
+</head>
+
+<body> 
+ 
+<ul>
+      <li><a href="#home">Introduction</a></li>
+      <li><a href="#news">Education</a></li>
+      <li><a href="#home">Work Experience</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Travel Experience</a>
+        <div class="dropdown-content">
+          <a href="#">Canada</a>
+          <a href="#">Hong Kong</a>
+          <a href="#">Japan</a>
+          <a href="#">U.S</a>
+          <a href="#">Indonesia</a>
+          <a href="#">Thailand</a>
+          <a href="#">Australia</a>
+          <a href="finland.html">Finland</a>
+        </div>
+      </li>
+       <li><a href="#">Contact</a></li>
+        <li><a href="befriends.html">Be Friends</a></li>
+        </ul>
+
+<div class="container">     
+    <div class="container2"><h1>EDUCATION</h1><br><p>NATIONAL TAIWAN UNIVERSITY 
+Business Administration
+UNIVERSITY OF CALIFORNIA, BERKELEY
+Summer Session
+</p></div>
+    <div class="container3"><h1>WORK EXPERIENCE</h1><p>NTU STUDENT ASSOCIATION
+Secretary Department - Member
+Administer property and solved the financial hardship of budget overruns
+Host the year-end party 
+BUSINESS ADMINISTRATION CAMP 
+Course Design Group - Host and Team Leader
+Won praise for the informative lesson
+Serve as a college admissions mock interviewer
+2015 TAIWAN DEBATE OPEN
+Handbook Creator & Staff
+PUBLIC RELATIONS COMMITTEE
+Member
+Contacted local businesses and increased funding by 20%
+</p></div>
+   <div class="container4"><h1>VOLUNTEER EXPERIENCE</h1><p>AIESEC UNDIP, INDONESIA 
+Sunshine5 Project - Exchange Participant
+Guide and instruct children and teenagers at elementary school and NGO
+Broadcast on radio Sonora Semarang FM 98.9 live
+Participate in local activities such as Semarang Education Forum, Global Village campaign
+Won the most adaptable award
+(AIESEC: International Association of Student in Economics and Management)
+</p></div>
+</div>
+
+<table  style="border:3px #FFD382 dashed;" cellpadding="10" border='1' bgcolor="#FFF8C6" align="center">
+    <colgroup>
+        <col style="width:100px" /><col />
+    </colgroup>
+    <thead>
+        <tr><th>LANGUAGE SKILLS</th><th>LEVEL</th></tr>
+    </thead>
+    <tfoot>
+        <tr><td>French</td><td>Beginner</td></tr>
+    </tfoot>
+    <tbody>
+        <tr><td>Toefl</td><td>98</td></tr>
+        <tr><td>Japanese</td><td>N3</td></tr>
+    </tbody>
+</table>
+
+</body>
+</html>
